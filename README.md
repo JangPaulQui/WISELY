@@ -1,2 +1,2 @@
 # wisely
-2st-portfolio-beauty-brand-"wisely"
+1st-portfolio-beauty-brand-"wisely"
