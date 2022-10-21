@@ -145,10 +145,10 @@ overflow:hidden;
 .banner .textBox {
 width: 100%;
 position:absolute;
-top:46%;
+top:50%;
 left:35%;
 text-align: right;
-transform: translate(-50%, -42%);
+transform: translate(-50%, -35%);
 }
 
 .banner h2 {
@@ -220,17 +220,16 @@ background-image: url(../images/right-thin-48.png);
 }
 .pager {
     position: absolute;
-    top: 84%;
+    top: 80%;
     left: 50%;
-    transform: translate(-50%, -82%);
     display: flex;
     column-gap: 20px;
 }
 
 .pager > li > a {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: #ccc;
     text-align: center;
@@ -238,7 +237,7 @@ background-image: url(../images/right-thin-48.png);
 }
 
 .pager > .active > a {
-    background: #0055B8;
+    background: #000;
     color: #fff;
 }
 
@@ -657,7 +656,8 @@ body {
     width: 100%;
     padding:0 100px;
     box-sizing: border-box;
-    top:2.5vw;
+    top:11.5vw;
+    left: 45%;
 }
 
 .arrow>.left {
@@ -671,8 +671,8 @@ body {
 }
 
 .pager {
-    bottom: 34%;
-    transform: translateY(-34%);
+    top: 64%;
+    transform: translateY(-64%);
 }
 
 .reviewWrap .arrow>.leftWhite {
@@ -681,7 +681,7 @@ body {
 }
 
 .reviewWrap .arrow>.rightWhite {
-    right: 00%;
+    right: 0%;
     margin-right: 00px;
 }
 
@@ -716,12 +716,20 @@ body {
 /* 1. 제거 */
 /* 2. 보이기 */
 /* 3. 큰사이즈 100% 만들기 */
-.arrow>.left {
+.arrow>.leftBtn {
     background-image: url(../images/left-thin-48.png);
 }
 
-.arrow>.right {
+.arrow>.rightBtn {
     background-image: url(../images/right-thin-48.png);
+}
+
+.pager {
+    top: 54%;
+}
+
+#container .title-prod {
+    padding-top: 0
 }
 
 .reviewWrap .imgBox {   
@@ -806,19 +814,6 @@ body {
     font-size:2.5em;
 }
 
-.mo_arrow>a {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10px;
-    text-indent:-9999px;
-}
-
 .arrow>.left {
     top:40%;
     background-image: url(../images/left-thin-white.png);
@@ -853,6 +848,16 @@ body {
 .pager {
     top: 73%;
     left: 43%;
+}
+
+.pager > li > a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    text-indent: -9999px;
 }
 
 .reviewWrap .innerBox{
@@ -1047,12 +1052,20 @@ body {
 
 /* 3. 큰사이즈 100% 만들기 */
 .pager {
-    top: 63%;
+    top: 68%;
     left: 40%;
 }
 
 .reviewWrap .imgBox {
     width:800%;
+}
+.mo_banner .textBox {
+    right: 12%
+}
+
+#container .title-prod,
+#container .title-sub-prod {
+    padding: 0 30px;
 }
 }
 
@@ -1084,6 +1097,7 @@ body {
     padding:0 10px;
     box-sizing: border-box;
 }
+
 .reviewWrap {
     padding: 0;
     padding-top:30px;
