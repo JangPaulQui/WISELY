@@ -8,6 +8,8 @@ $(function () {
     $(".banner").append(cloneObj);
     let liWidth = $(".banner>li").eq(0).width();
     let mliWidth = $(".mo_banner>li").eq(0).outerWidth();
+    let mcloneObj = $(".mo_banner>li").eq(0).clone();
+    $(".mo_banner").append(mcloneObj);
     let wWidth = $(window).width();
 
     //배너의 개수
@@ -88,26 +90,39 @@ $(function () {
         moveSlide();
     });
 
-    //3초마다 배너가 하나씩 이동하도록
-    //오른쪽 버튼을 클릭한것처럼 한개씩 왼쪽으로
-    // timer = setInterval(() => {
-    //     $(".rightBtn").trigger("click");
-    // }, 3000)
-
-    //배너위에 마우스를 올리면 setInterval 중지
-    //마우스가 벗어나면 자동실행
-    // $("#mainBanner,#mo_mainBanner").on({
-    //     "mouseover": function () {
-    //         clearInterval(timer);
-    //     },
-    //     "mouseout": function () {
-    //         timer = setInterval(() => {
-    //             $(".rightBtn").trigger("click");
-    //         }, 3000)
-    //     }
-    // })
+    // 팝업
+    $(function () {
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $('.popup').show();
+        $('.close').click(function () {
+            $('.popup').hide();
+            overlay.appendTo(document.body).remove();
+            return false;
+        });
 
 
 
 
+        $('.x').click(function () {
+            $('.popup').hide();
+            overlay.appendTo(document.body).remove();
+            return false;
+        });
+    });
+
+    function initSize(){
+        wWidth=$(window).width();
+        liWidth=wWidth;
+        mliWidth=wWidth;
+        showBanner=0;
+        moveX=0;
+        $(".banner,.mo_banner").css("margin-left", moveX + "px");
+        console.log(wWidth);
+    }
+    //resize
+    $(window).on("resize",function(){
+        initSize();
+    })
 });
