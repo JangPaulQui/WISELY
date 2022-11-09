@@ -676,8 +676,7 @@ body {
 }
 
 .pager {
-    top: 64%;
-    transform: translateY(-64%);
+    bottom: 20%;
 }
 
 .reviewWrap .arrow>.leftWhite {
@@ -730,7 +729,7 @@ body {
 }
 
 .pager {
-    top: 54%;
+    bottom:20%;
 }
 
 #container .title-prod {
@@ -907,7 +906,7 @@ body {
     width:100%;
     padding: 55px 0 110px;
     border-bottom:none;
-    border-top:none;
+    /* border-top:none; */
 }
 
 .followInsta span{
@@ -944,7 +943,6 @@ body {
     border:1px solid #000;
 }
 
-.footMiddle .shop,
 .footMiddle .brand {
     border-top:none;
 }
@@ -1057,7 +1055,7 @@ body {
 
 /* 3. 큰사이즈 100% 만들기 */
 .pager {
-    top: 68%;
+    top: 62%;
     left: 40%;
 }
 
@@ -1065,7 +1063,6 @@ body {
     width:800%;
 }
 .mo_banner .textBox {
-    right: 12%
 }
 
 #container .title-prod,
@@ -1091,6 +1088,10 @@ body {
 
 .arrow>.right {
     top:30%;
+}
+
+.pager {
+    top: 55%;
 }
 
 #container .prodList {
@@ -1141,72 +1142,9 @@ body {
     height: 12px;
     background-image: url(../images/white-left-thin-24.png);
 }
+
+.secWrap {
+    height: inherit;
+}
 }
 
-/* 모달 팝업창 */
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    filter:alpha(opacity=70);
-    -moz-opacity:0.7;
-    -khtml-opacity: 0.7;
-    opacity: 0.7;
-    z-index: 100;
-    display: none;
-    }
-
-    .popup{
-    width: 100%;
-    margin: 0 auto;
-    display: none;
-    position: fixed;
-    z-index: 101;
-    }
-    
-    .cnt223{
-    min-width: 600px;
-    width: 600px;
-    min-height: 150px;
-    margin: 100px auto;
-    background: #f3f3f3;
-    position: relative;
-    z-index: 103;
-    padding: 15px 35px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #000;
-    }
-
-    .cnt223 a{
-        text-decoration: none;
-    }
-
-    .cnt223 p{
-    clear: both;
-        color: #555555;
-        font-size: 20px;
-        font-family: sans-serif;
-    }
-
-    .cnt223 span {font-size: 12px;}
-
-    .cnt223 p a{
-    color: #d91900;
-    font-weight: bold;
-    }
-
-    .cnt223 .x{
-    float: right;
-    height: 35px;
-    left: 22px;
-    position: relative;
-    top: -25px;
-    width: 34px;
-    }
-
-    .cnt223 .x:hover{
-    cursor: pointer;
-    }

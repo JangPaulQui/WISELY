@@ -16,6 +16,6 @@ window.onload = function(){
 
     ham.addEventListener("click", toggleMenu)
 
-    // 모달
+    
 
 }

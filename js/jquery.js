@@ -89,40 +89,19 @@ $(function () {
         showBanner = $(this).index();
         moveSlide();
     });
-
-    // 팝업
-    $(function () {
-        var overlay = $('<div id="overlay"></div>');
-        overlay.show();
-        overlay.appendTo(document.body);
-        $('.popup').show();
-        $('.close').click(function () {
-            $('.popup').hide();
-            overlay.appendTo(document.body).remove();
-            return false;
-        });
-
-
-
-
-        $('.x').click(function () {
-            $('.popup').hide();
-            overlay.appendTo(document.body).remove();
-            return false;
-        });
-    });
-
-    function initSize(){
-        wWidth=$(window).width();
-        liWidth=wWidth;
-        mliWidth=wWidth;
-        showBanner=0;
-        moveX=0;
-        $(".banner,.mo_banner").css("margin-left", moveX + "px");
-        console.log(wWidth);
-    }
+    
     //resize
     $(window).on("resize",function(){
         initSize();
     })
+
+    // bx slider
+    $(function(){
+        $('.bxslider').bxSlider({
+          mode: 'fade',
+          captions: true,
+          slideWidth: 600
+        });
+      });
+
 });

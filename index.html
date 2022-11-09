@@ -11,7 +11,10 @@
     />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.js"></script>
   </head>
@@ -64,22 +67,6 @@
         </ul>
       </div>
     </header>
-
-    <!-- 팝업 -->
-    <div class='popup'>
-      <div class='cnt223'>
-      <h1>장성준 포트폴리오 - 뷰티브랜드 "와이즐리" 리디자인</h1>
-      <p>
-      <span>해당 홈페이지 이미지 저작권은 와이즐리컴퍼니에 있으며, 포트폴리오 용으로 사용 되었습니다.</span>
-      <br/>
-      html5, css3, jQuery(슬라이드 배너), javascript(햄버거 메뉴)로 홈페이지를 구현 하였습니다.
-      <br/>
-      <br/>
-      <a href='' class='close'>닫기</a>
-      </p>
-      </div>
-      </div>
-
     <!-- 2. #mainBanner -->
     <div id="mainBanner">
       <ul class="banner">
@@ -218,7 +205,6 @@
     <div id="container">
       <div class="innerBox">
         <!-- product area start! -->
-
         <div class="prodWrap">
           <h2 class="title-prod">
             와이즐리는 실제 피부에서 영감을 받은 뷰티 제품 입니다
@@ -357,55 +343,21 @@
       </div>
 
       <!-- review area start! -->
-      <div class="reviewWrap">
-        <div class="innerBox">
-          <!-- 고정 텍스트 -->
-          <div class="textWrap">
-            <h2 class="title">What we <span>believe in</span></h2>
-            <p>For too long, beauty has been</p>
-            <p>about projecting unrealistic and</p>
-            <p>toxic standards on us and has</p>
-            <p>affected how we see and value</p>
-            <p>ourselves</p>
-          </div>
-          <div class="review">
-            <!-- 움직이는 이미지 -->
-            <ul class="imgBox">
-              <li>
-                <img src="images/review_1.jpg" alt="review1" />
-              </li>
-              <li>
-                <img src="images/review_2.jpg" alt="review2" />
-              </li>
-              <li>
-                <img src="images/review_2.jpg" alt="review3" />
-              </li>
-              <li>
-                <img src="images/review_2.jpg" alt="review4" />
-              </li>
-              <li>
-                <img src="images/review_1.jpg" alt="review5" />
-              </li>
-              <li>
-                <img src="images/review_2.jpg" alt="review6" />
-              </li>
-              <li>
-                <img src="images/review_2.jpg" alt="review7" />
-              </li>
-              <li>
-                <img src="images/review_2.jpg" alt="review8" />
-              </li>
-            </ul>
-          </div>
-          <!-- arrow -->
-          <div class="arrow">
-            <a href="#" class="leftWhite">left</a>
-            <a href="#" class="rightWhite">right</a>
+      <div class="secWrap">
+        <h2 class="title">Photo Review</h2>
+            <p>고객님들의 리뷰입니다.</p>
+          <div class="bxslider">
+            <div>
+              <img src="images/review_1.jpg" title="@angelina97">
+            </div>
+            <div>
+              <img src="images/review_2.jpg" title="@polymoly_">
+            </div>
+            <div>
+              <img src="images/review_3.jpg" title="@_happyguys_">
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
     <!-- 4. footer -->
     <footer>
       <div class="footTop innerBox">
